@@ -1,3 +1,3 @@
 module.exports = {
-    MongoURI: 'mongodb+srv://amitKumar:amit12319@mycluster.thdgt.mongodb.net/<dbname>?retryWrites=true&w=majority'
+    MongoURI: 'mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@mycluster.thdgt.mongodb.net/<dbname>?retryWrites=true&w=majority'
 }
